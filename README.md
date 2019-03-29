@@ -1,2 +1,5 @@
 # KVO_NSMutableArray
 KVO在NSMutableArray中监听功能的实现
+
+背景：
+对可变数组的增删改操作，不是通过通常的setter/getter来进行操作的，因而常规的操作下不能使用KVO的机制来监听数组的变化。可用系统提供的mutableArrayValueForKey方法来实现KVO这一功能。
